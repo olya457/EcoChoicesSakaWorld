@@ -1,4 +1,4 @@
-package com.ecochoicessakaworld
+package com.ecochoices.sakaworld
 
 import android.app.Application
 import com.facebook.react.PackageList

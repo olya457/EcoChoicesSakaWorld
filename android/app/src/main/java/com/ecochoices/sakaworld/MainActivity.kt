@@ -1,4 +1,4 @@
-package com.ecochoicessakaworld
+package com.ecochoices.sakaworld
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
