@@ -72,6 +72,6 @@ export const ARTICLES: Article[] = [
     id: '12',
     title: 'Progress Over Perfection',
     image: images.article12,
-    text: 'Sustainability is not about doing everything perfectly. It is about making better choices when you can. Trying to be perfect can feel overwhelming.\n\nEvery small improvement matters. Even occasional eco-friendly choices have an impact. These actions build over time and become easier with practice.\n\nMistakes are part of the process. You will not always make the best choice, and that is normal. What matters is continuing to try.\n\nComparing yourself to others is not helpful. Everyone is at a different stage. Focus on your own progress.\n\nThe goal is to keep moving forward, not to be perfect, but to be better than before.',
+    text: 'Sustainability is nojt about doing everything perfectly. It is about making better choices when you can. Trying to be perfect can feel overwhelming.\n\nEvery small improvement matters. Even occasional eco-friendly choices have an impact. These actions build over time and become easier with practice.\n\nMistakes are part of the process. You will not always make the best choice, and that is normal. What matters is continuing to try.\n\nComparing yourself to others is not helpful. Everyone is at a different stage. Focus on your own progress.\n\nThe goal is to keep moving forward, not to be perfect, but to be better than before.',
   },
 ];
