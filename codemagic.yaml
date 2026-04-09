@@ -1,19 +1,19 @@
 workflows:
   sample-workflow:
-    name: Letto Max Choice Type
+    name: Sazka Choices Eco World
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: Letto Max Choice Type
+      app_store_connect: Eco Choices Saka World
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.heghoetato.jgahohgiype
+        bundle_identifier: com.verynikol.vestnacuhd
       vars:
-        APP_STORE_APPLE_ID: 6756238326
-        BUNDLE_ID: 'com.heghoetato.jgahohgiype'
-        XCODE_WORKSPACE: 'LettoMaxChoiceType.xcworkspace'
-        XCODE_SCHEME: 'LettoMaxChoiceType'
+        APP_STORE_APPLE_ID: 6761899322
+        BUNDLE_ID: 'com.verynikol.vestnacuhd'
+        XCODE_WORKSPACE: 'EcoChoicesSakaWorld.xcworkspace'
+        XCODE_SCHEME: 'EcoChoicesSakaWorld'
     scripts:
       - name: Install node modules
         script: |
@@ -50,4 +50,4 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_app_store: true
-        copyright: VESA ENSIO LAHDEMAKI
+        copyright: Andrei Georgiev
