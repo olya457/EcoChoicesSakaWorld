@@ -27,7 +27,17 @@ export default function QuizResultScreen({ route, navigation }: Props) {
   const passed = score > total / 2;
 
   const handleExit = () => {
-    navigation.replace('Quiz');
+    navigation.reset({
+      index: 0,
+      routes: [
+        {
+          name: 'Main',
+          params: {
+            screen: 'QuizTab',
+          },
+        },
+      ],
+    });
   };
 
   const handleTryAgain = () => {
@@ -46,11 +56,7 @@ export default function QuizResultScreen({ route, navigation }: Props) {
 
       <SafeAreaView style={styles.safe}>
         <View style={styles.centerWrap}>
-          <Image
-            source={images.onboardGirl5}
-            style={styles.girl}
-            resizeMode="contain"
-          />
+          <Image source={images.onboardGirl5} style={styles.girl} resizeMode="contain" />
 
           <View style={styles.card}>
             <Text style={styles.scoreText}>
@@ -60,43 +66,27 @@ export default function QuizResultScreen({ route, navigation }: Props) {
             <Text style={styles.body}>
               {passed
                 ? "Great result. You're already making smarter choices and understanding what matters most."
-                : "Keep trying. Every new attempt helps you notice better choices and improve step by step."}
+                : 'Keep trying. Every new attempt helps you notice better choices and improve step by step.'}
             </Text>
 
             <View style={styles.row}>
               {passed ? (
                 <>
-                  <TouchableOpacity
-                    style={styles.greenBtn}
-                    onPress={handleNextLevel}
-                    activeOpacity={0.85}
-                  >
+                  <TouchableOpacity style={styles.greenBtn} onPress={handleNextLevel} activeOpacity={0.85}>
                     <Text style={styles.greenText}>Next Level</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                    style={styles.darkBtn}
-                    onPress={handleExit}
-                    activeOpacity={0.85}
-                  >
+                  <TouchableOpacity style={styles.darkBtn} onPress={handleExit} activeOpacity={0.85}>
                     <Text style={styles.darkText}>Exit</Text>
                   </TouchableOpacity>
                 </>
               ) : (
                 <>
-                  <TouchableOpacity
-                    style={styles.yellowBtn}
-                    onPress={handleTryAgain}
-                    activeOpacity={0.85}
-                  >
+                  <TouchableOpacity style={styles.yellowBtn} onPress={handleTryAgain} activeOpacity={0.85}>
                     <Text style={styles.yellowText}>Try Again</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                    style={styles.darkBtn}
-                    onPress={handleExit}
-                    activeOpacity={0.85}
-                  >
+                  <TouchableOpacity style={styles.darkBtn} onPress={handleExit} activeOpacity={0.85}>
                     <Text style={styles.darkText}>Exit</Text>
                   </TouchableOpacity>
                 </>
@@ -150,10 +140,7 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: 410,
     backgroundColor: 'rgba(10,22,60,0.90)',
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
-    borderBottomLeftRadius: 24,
-    borderBottomRightRadius: 24,
+    borderRadius: 24,
     paddingHorizontal: isVerySmall ? 16 : isSmall ? 20 : 24,
     paddingTop: isVerySmall ? 20 : 24,
     paddingBottom: isVerySmall ? 18 : 24,
