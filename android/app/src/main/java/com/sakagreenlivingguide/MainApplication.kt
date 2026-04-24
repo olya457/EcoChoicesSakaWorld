@@ -1,4 +1,4 @@
-package com.ecochoices.sakaworld
+package com.sakagreenlivingguide
 
 import android.app.Application
 import com.facebook.react.PackageList

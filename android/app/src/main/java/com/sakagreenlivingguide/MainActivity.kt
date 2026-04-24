@@ -1,4 +1,4 @@
-package com.ecochoices.sakaworld
+package com.sakagreenlivingguide
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
